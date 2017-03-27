@@ -1,0 +1,15 @@
+name: Header test
+listeners:
+  - utilities.Listener
+  
+tests:
+  - name: Status code check on Chrome for mac
+    parameters:
+      pplatform: Platform.MAC
+      pbrowser: chrome
+      pversion: 50
+      purl: http://localhost:4444/wd/hub
+      pos: mac
+      pdevice: desktop
+    classes:
+      - tests.HttpStatusCodeTest

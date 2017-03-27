@@ -1,0 +1,6 @@
+name: Test suite configuration
+
+tests:
+  - name: Configuration of the tests
+    classes:
+      - tests.TestConfig

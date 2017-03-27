@@ -1,0 +1,29 @@
+name: Base test suite
+listeners:
+  - utilities.Listener
+  
+tests:
+- name: Status code check on Chrome for mac
+  parameters: {pplatform: Platform.MAC, pbrowser: chrome, pversion: 50, purl: 'http://localhost:4444/wd/hub',
+    pos: mac, pdevice: desktop}
+  classes: [tests.HttpStatusCodeTest]
+- name: Status code check on iOS simulator (iPhone 6)
+  parameters: {pplatform: Platform.MAC, pbrowser: safari, pversion: 8.4, purl: 'http://127.0.0.1:4723/wd/hub',
+    pos: ios, pdevice: iPhone 6}
+  classes: [tests.HttpStatusCodeTest]
+- name: Account Login test on Chrome for mac
+  parameters: {pplatform: Platform.MAC, pbrowser: chrome, pversion: 50, purl: 'http://localhost:4444/wd/hub',
+    pos: mac, pdevice: desktop}
+  classes: [tests.AccountLoginTest]
+- name: Checkout Test on Chrome for mac
+  parameters: {pplatform: Platform.MAC, pbrowser: chrome, pversion: 50, purl: 'http://localhost:4444/wd/hub',
+    pos: mac, pdevice: desktop}
+  classes: [tests.CheckoutTest]
+- name: Header test on Chrome for mac
+  parameters: {pplatform: Platform.MAC, pbrowser: chrome, pversion: 50, purl: 'http://localhost:4444/wd/hub',
+    pos: mac, pdevice: desktop}
+  classes: [tests.HeaderVisualTest]
+- name: LC test 1
+  parameters: {pplatform: Platform.MAC, pbrowser: chrome, pversion: 50, purl: 'http://localhost:4444/wd/hub',
+    pos: mac, pdevice: desktop}
+  classes: [tests.lc.tests.HeaderObjTest]

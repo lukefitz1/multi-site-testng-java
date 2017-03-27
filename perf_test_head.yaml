@@ -1,0 +1,4 @@
+name: Performance test suite
+parallel: tests
+  
+tests:

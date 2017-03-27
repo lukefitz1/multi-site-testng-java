@@ -1,0 +1,101 @@
+aaa:
+  dev: 
+    base_url: http://aaa.dev/
+  local:
+    base_url: http://qa.aaa.dev/
+  stage:
+    base_url: https://mag-www-qa01.alexandani.com/
+  prod:
+    base_url: https://www.alexandani.com/
+  tests:
+    base_tests: base_tests.yaml
+    client_tests: aaa_tests.yaml
+  desktop:
+#    width: "1440"
+    width: "1280"
+    height: "800"
+  ajax_minicart: "true"
+  file_extension: "true"
+  direct_to_checkout: "true"
+  urls:
+    categoryA_url: test-cat1/
+    categoryB_url: test-cat1/test-subcat1/
+    simple_product_url: batest-simple
+    cart_url: checkout/cart/
+    checkout_url: onestepcheckout 
+
+lc:
+  dev:
+      base_url: http://lc.dev/
+  local:
+      base_url: http://qa.lc.dev/
+  stage:
+      base_url: http://dev.lecreuset.com/
+  prod:
+    base_url: http://www.lecreuset.com/
+  tests:
+    base_tests: base_tests.yaml
+    client_tests: lc_tests.yaml
+  desktop:
+#    width: "1600"
+    width: "1280"
+    height: "800"
+  ajax_minicart: "true"
+  file_extension: "false"
+  direct_to_checkout: "false"
+  urls:
+    categoryA_url: cookware/
+    categoryB_url: cookware/dutch-ovens/
+    simple_product_url: batest-simple
+    cart_url: checkout/cart/
+    checkout_url: checkout/onepage 
+    
+nat: 
+  dev:
+      base_url: http://nat.dev/
+  local:
+      base_url: http://qa.nat.dev/
+  stage:
+      base_url: https://www.shopnational.com/
+  prod:
+    base_url: https://www.shopnational.com/
+  tests:
+    base_tests: base_tests.yaml
+    client_tests: nat_tests.yaml
+  desktop:
+    width: "1240"
+    height: "800"
+  ajax_minicart: "true"
+  file_extension: "false"
+  direct_to_checkout: "false"
+  urls:
+    categoryA_url: clothing/
+    categoryB_url: clothing/shirts-and-tops/
+    simple_product_url: batest-simple
+    cart_url: checkout/cart/
+    checkout_url: checkout/onepage 
+
+ee: 
+  dev:
+      base_url: http://ee.dev/
+  local:
+      base_url: http://qa.ee.dev/
+  stage:
+      base_url: http://staging.eartheasy.com
+  prod:
+    base_url: https://www.eartheasy.com/
+  tests:
+    base_tests: base_tests.yaml
+    client_tests: ee_tests.yaml
+  desktop:
+    width: "1240"
+    height: "800"
+  ajax_minicart: "false"
+  file_extension: "false"
+  direct_to_checkout: "false"
+  urls:
+    categoryA_url: clothing/
+    categoryB_url: clothing/shirts-and-tops/
+    simple_product_url: batest-simple/
+    cart_url: checkout/cart/
+    checkout_url: checkout/onepage 

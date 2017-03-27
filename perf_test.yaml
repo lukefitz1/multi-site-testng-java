@@ -1,0 +1,40 @@
+name: Selenium poc - perf tests
+parallel: tests
+  
+tests:
+  - name: Search speed test 1 on homepage on chrome for mac
+    parameters:
+      pplatform: Platform.MAC
+      pbrowser: chrome
+      pversion: "50"
+      purl: "http://localhost:4444/wd/hub"
+      pos: mac
+      pdevice: desktop
+      pwidth: 1280
+      pheight: 800 
+    classes:
+      - tests.SearchTest
+  - name: Search speed test 2 on homepage on chrome for mac
+    parameters:
+      pplatform: Platform.MAC
+      pbrowser: chrome
+      pversion: "50"
+      purl: "http://localhost:4444/wd/hub"
+      pos: mac
+      pdevice: desktop
+      pwidth: 1280
+      pheight: 800 
+    classes:
+      - tests.SearchTest
+  - name: Search speed test 3 on homepage on chrome for mac
+    parameters:
+      pplatform: Platform.MAC
+      pbrowser: chrome
+      pversion: "50"
+      purl: "http://localhost:4444/wd/hub"
+      pos: mac
+      pdevice: desktop
+      pwidth: 1280
+      pheight: 800 
+    classes:
+      - tests.SearchTest

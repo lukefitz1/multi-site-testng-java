@@ -1,0 +1,10 @@
+  - name: NAT test 1
+    parameters:
+      pplatform: Platform.MAC
+      pbrowser: chrome
+      pversion: 50
+      purl: http://localhost:4444/wd/hub
+      pos: mac
+      pdevice: desktop
+    classes:
+      - tests.nat.tests.HeaderObjTest
